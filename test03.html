@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/reset.css" />
+    <style></style>
+    <script src="./script/jquery-3.7.1.js"></script>
+  </head>
+  <body>
+    <h1 class="color" id="title">한글은 아름다운 글입니다</h1>
+    <script src="./script/jquery-3.7.1.js"></script>
+    <script>
+      $("h1").text("text 추가");
+      $(".color").html("<i>italic</i>");
+      $("h1").text("<u>text 추가</u>"); // 태그를 텍스트로 인식
+      $("h1").append("text01");
+      $("h1").append("<span>text02</span>");
+      $("h1").append("<u>text03</u>");
+      $("h1").prepend("<u>text04</u>"); // 앞에다 추가
+      $("h1").before("<u>before</u>"); // 태그 밖에 앞에 들어감
+      $("h1").after("<u>after</u>"); // 태그 밖에 뒤에 들어감
+    </script>
+    <!-- 
+        선택자 : $('css 모든 선택자')
+        style 디자인 : css ({"속성 : "값", "속성 : "값",......});
+
+        .innerHTML = "text"  .html("text")
+        .innerText = "text"  .text("text")
+        .textContent
+
+        .append()       .append()
+        .appendChild()
+
+        .insertAdjcentElement("afterend, afterstart | beforeend, beforestart", 요소 추가);
+        $("h1").append("<u>text03</u>");
+        $("h1").prepend("<u>text04</u>"); // 앞에다 추가
+        $("h1").before("<u>before</u>"); // 태그 밖에 앞에 들어감
+        $("h1").after("<u>after</u>"); // 태그 밖에 뒤에 들어감
+     -->
+  </body>
+</html>
