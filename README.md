@@ -8,3 +8,5 @@ git push -u origin main <br>
 git remote add origin https://github.com/driri78/1321.git <br>
 git branch -M main <br>
 git push -u origin main <br>
+
+수정
